@@ -1,0 +1,321 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/* The Header */
+.theHeader {
+    background: #fdf2e9;
+    z-index: 999;
+    position: relative;
+    color: #333;
+}
+
+.theHeader-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+}
+
+.theHeader-logo {
+    max-width: 9rem;
+    display: block;
+}
+
+.theHeader-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.theHeader-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.theHeader-nav li {
+    padding: 0 1rem;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.theHeader-nav li a {
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.theHeader-nav li a:hover {
+    color: #e67e22;
+}
+
+.theHeader-mobile {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fdf2e9;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 6rem;
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .theHeader-mobile {
+        display: flex;
+    }
+    body {
+        padding-bottom: 5rem;
+    }
+}
+
+.theHeader-mobile li a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.theHeader-mobile li a:hover {
+    color: #e67e22;
+}
+
+/* Buttons */
+.btn-primary {
+    border-radius: 9px !important;
+    color: #fff !important;
+    background-color: #e67e22 !important;
+    border-color: #e67e22 !important;
+    font-weight: 500 !important;
+}
+
+.light {
+    border-radius: 9px !important;
+    background: #fff !important;
+    color: #555555 !important;
+    border-color: #fff !important;
+    font-weight: 500 !important;
+}
+
+/* Healthy Section */
+.healthy-section {
+    background: #fdf2e9;
+}
+
+.customers {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.customers-images {
+    display: flex;
+}
+
+.customers-images img {
+    height: 50px;
+    width: 50px;
+    margin-right: -20px;
+    border-radius: 50%;
+    border: 3px solid #fdf2e9;
+}
+
+.customers-desc {
+    font-weight: 700;
+}
+
+.customers-desc span {
+    color: #cf711f;
+    font-weight: 700;
+}
+
+/* Featured Section */
+.featured-section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    color: #888;
+    font-size: 18px;
+}
+
+.featured-section .pictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured-section .pictures img {
+    filter: brightness(0);
+    opacity: 50%;
+    max-width: 180px;
+    height: 40px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+/* Works Section */
+.works-section h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.works-section .pargraph {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 7rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.works-section span {
+    font-size: 80px;
+    font-weight: 600;
+    color: #ddd;
+    display: block;
+}
+
+.works-section h4 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.works-section p:last-of-type {
+    color: #555555;
+}
+
+/* Meals Section */
+.meals-section h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.meals-section .pargraph {
+    color: #333333;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.appBox {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.appBox img {
+    width: 100%;
+}
+
+.appBox .appBox-body {
+    padding: 30px 40px;
+}
+
+.appBox .appBox-tags {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.appBox .appBox-tags span {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.appBox .appBox-tags .vegetarian {
+    background-color: #51cf66;
+}
+
+.appBox .appBox-tags .vegan {
+    background-color: #94d82d;
+}
+
+.appBox .appBox-tags .paleo {
+    background-color: #ffd43b;
+}
+
+.appBox .appBox-pargrpah {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.appBox .appBox-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appBox .appBox-icons  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+ion-icon {
+    height: 24px;
+    width: 24px;
+    color: #e67e22;
+    margin-right: 10px;
+}
+
+.diet h3 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.diet .diet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.diet .diet-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
