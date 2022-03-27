@@ -85,7 +85,14 @@
     }
 }
 
-.theHeader-mobile li a{
+.theHeader-mobile li {
+    padding: 0 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.theHeader-mobile li a {
     display: flex;
     align-items: center;
     flex-direction: column;
